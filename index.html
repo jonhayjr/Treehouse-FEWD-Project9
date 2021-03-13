@@ -9,11 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Portfolio | Jon Hay</title>
 </head>
 
-<body class="bg-secondary">
+<body id="home" class="bg-secondary">
     <!--Begin Navbar-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3">
         <div class="container-fluid">
@@ -24,10 +25,10 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item mx-3">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link" href="#">Projects</a>
@@ -38,17 +39,34 @@
               <li class="nav-item mx-3">
                 <a class="nav-link" href="#">Contact</a>
               </li>
+              </ul>
           </div>
         </div>
       </nav>
     <!--End Navbar-->
-      <div class="row text-white my-5 text-center">
+    <!-- Begin Header-->
+    <header>
+      <div class="row text-white text-center header-background py-3">
           <div class="col">
-              <h1 class="display-4">My name is Jon</h1>
-              <h2 class="display-6 my-4">And I'm a web developer.</h2>
+              <h1 class="display-4 my-4 align-middle">My name is Jon Hay</h1>
+              <h2 class="display-6 my-4 align-middle">And I'm a web developer from Santa Barbara, California.</h2>
           </div>
       </div>
-
+    </header>
+    <!-- End Header -->
+    <main>
+      <!-- Begin About Section-->
+      <section>
+        <div class="row text-white text-center p-5 border border-5">
+          <div class="col">
+            <h5 id="about" class="display-4">About</h5>
+            <img src="img/JonHeadShot.jpeg" class="img-fluid img-radius my-3" alt="Jon Headshot">
+            <p class="lead line-height">I took my first programming class when I was in high school.  Since then, I have had an interest in programming.  I took a few classes here and there but never made learning to program a priority.  In September 2020, I started my learning journey and spent an hour each day learning to code.  In January 2021, I decided to enroll in the Front End Developer Techdegree program with Treehouse.  It has been a challenging and very rewarding experience.</p>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section-->
+    </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

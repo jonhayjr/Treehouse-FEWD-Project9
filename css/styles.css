@@ -1,0 +1,16 @@
+.header-background {
+    background-image: linear-gradient(to bottom, rgba(246, 245, 252, 0.247), rgba(117, 19, 93, 0.73)), url("../img/sbimage.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-radius {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.line-height {
+    line-height: 2;
+}
