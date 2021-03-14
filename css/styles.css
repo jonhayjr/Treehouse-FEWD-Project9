@@ -1,4 +1,10 @@
+hr {
+    background-color: white;
+    height: 1px;
+    border: none;
+}
 
+/*Header*/
 .header-background {
     background-image: linear-gradient(to bottom, rgba(246, 245, 252, 0.247), rgba(117, 19, 93, 0.73)), url("../img/sbimage.jpeg");
     background-size: cover;
@@ -16,3 +22,51 @@
     line-height: 2;
 }
 
+/*Project*/
+.card img {
+    height: auto;
+}
+
+/*List Item Styling*/
+.list-item-html5 {
+    background-color: #e34f26;
+    color: white;
+}
+
+.list-item-css {
+    background-color: #2759AE;
+    color: white;
+
+}
+
+.list-item-js {
+    background-color: #f7df1e;
+    color: black;
+}
+
+.list-item-sass {
+    color: #CD6799;
+}
+
+.list-item-sql {
+    background-color: #CFD8DC;
+    color: #B71C1C;
+}
+
+.list-item-github {
+    background-color: #333;
+    color: white;
+}
+
+.list-item-git {
+    color: #F34F29;
+}
+
+.list-item-bootstrap {
+    color: white;
+    background-color: #563d7c;
+}
+
+    .skills .list-group-item {
+    border-radius: 15px 15px;
+}
