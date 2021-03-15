@@ -70,3 +70,23 @@ hr {
 .skills .list-group-item {
     border-radius: 15px 15px;
 }
+
+/*Contact*/
+.contact svg {
+    height: 50px;
+    width: 50px;
+}
+
+.email {
+    fill: rgba(255, 255, 255, 0.753);
+}
+
+.linkedin {
+    fill: #2867B2;
+}
+
+.github {
+    fill: #333;
+}
+
+/*Footer*/
