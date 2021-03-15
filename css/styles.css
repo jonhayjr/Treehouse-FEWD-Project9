@@ -30,7 +30,7 @@ hr {
 .card .btn-secondary,
 .card .btn-dark {
     border: 2px solid transparent;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .card .btn-secondary:hover {
@@ -50,19 +50,39 @@ hr {
     color: white;
 }
 
-.list-item-css {
-    background-color: #2759AE;
-    color: white;
-
+.list-item-html5-inverted {
+    background-color: white;
+    color: #e34f26;
 }
 
-.list-item-js {
+.list-item-css3 {
+    background-color: #2759AE;
+    color: white;
+}
+
+.list-item-css3-inverted {
+    color: #2759AE;
+    background-color: white;
+}
+
+.list-item-javascript {
     background-color: #f7df1e;
     color: black;
 }
 
+.list-item-javascript-inverted {
+    color: #f7df1e;
+    background-color: black;
+}
+
+
 .list-item-sass {
     color: #CD6799;
+}
+
+.list-item-sass-inverted {
+    background-color: #CD6799;
+    color: white;
 }
 
 .list-item-sql {
@@ -70,18 +90,38 @@ hr {
     color: #B71C1C;
 }
 
+.list-item-sql-inverted {
+    color: #CFD8DC;
+    background-color: #B71C1C;
+}
+
 .list-item-github {
     background-color: #333;
     color: white;
+}
+
+.list-item-github-inverted {
+    color: #333;
+    background-color: white;
 }
 
 .list-item-git {
     color: #F34F29;
 }
 
+.list-item-git-inverted {
+    background-color: #F34F29;
+    color: white;
+}
+
 .list-item-bootstrap {
     color: white;
     background-color: #563d7c;
+}
+
+.list-item-bootstrap-inverted {
+    background-color: white;
+    color: #563d7c;
 }
 
 .skills .list-group-item {
@@ -106,3 +146,11 @@ hr {
     fill: #333;
 }
 
+a > svg {
+    transition: all 0.3s ease-in-out;
+}
+
+a > svg:hover {
+    transform: scale(1.5);
+    opacity: 0.75;
+}

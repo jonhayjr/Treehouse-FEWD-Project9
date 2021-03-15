@@ -15,4 +15,34 @@ headerBackground.addEventListener('mouseout', () => {
 })
 
 
+//Invert Skills List Colors on mouse hover
+const listItems = document.querySelectorAll('.list-group-item');
 
+function invertColors(element) {
+    const listItem = element.target;
+    const listText = listItem.innerText.toLowerCase();
+    const normalClass = "list-item-" + listText;
+    const invertedClass = normalClass + "-inverted";
+    const currentClassList = listItem.className;
+    listItem.style.transition = "all 0.3s ease-in-out";
+
+    if (currentClassList.indexOf(invertedClass) >= 0) {
+        listItem.classList.remove(invertedClass);
+        listItem.classList.add(normalClass);
+    } else {
+        listItem.classList.remove(normalClass);
+        listItem.classList.add(invertedClass);
+    }
+}
+
+listItems.forEach(listItem => {
+    listItem.addEventListener('mouseover', (event) => {
+        invertColors(event);
+    });
+});
+
+listItems.forEach(listItem => {
+    listItem.addEventListener('mouseout', (event) => {
+        invertColors(event);
+    });
+});
