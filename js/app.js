@@ -16,7 +16,7 @@ headerBackground.addEventListener('mouseout', () => {
 
 
 //Invert Skills List Colors on mouse hover
-const listItems = document.querySelectorAll('.list-group-item');
+const listItems = document.querySelectorAll('.skills .list-group-item');
 
 function invertColors(element) {
     const listItem = element.target;
@@ -46,3 +46,4 @@ listItems.forEach(listItem => {
         invertColors(event);
     });
 });
+
