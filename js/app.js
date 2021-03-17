@@ -48,16 +48,17 @@ listItems.forEach(listItem => {
 });
 
 /*Project Skill Filter - Allows projects to be filtered by skills used*/
-const skillListItem = document.querySelectorAll('.project-skills li');
+const skillSelect = document.querySelector('select');
 
-function filterSkills(item) {
+function filterSkills() {
+   const selectValue = skillSelect.value;
     const skillsUsed= document.querySelectorAll('.skills-used');
     skillsUsed.forEach(skill => {
         const parent = skill.parentElement.parentElement.parentElement;
         const skillUsedText = skill.innerText.replace('Skills Used:', '').toLowerCase();
       
     
-        if (skillUsedText.indexOf(item) >= 0) {
+        if (skillUsedText.indexOf(selectValue) >= 0) {
             parent.classList.remove('hidden');
         } else {
             parent.classList.add('hidden');
@@ -65,9 +66,7 @@ function filterSkills(item) {
     });
 }
 
-skillListItem.forEach(skill => {
-    skill.addEventListener('click', () => {
-        const skillText = skill.innerText.toLowerCase();
-        filterSkills(skillText);
-    })
-});
+
+skillSelect.addEventListener('change', filterSkills);
+
+ 
