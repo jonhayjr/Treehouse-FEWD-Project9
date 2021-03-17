@@ -47,3 +47,27 @@ listItems.forEach(listItem => {
     });
 });
 
+/*Project Skill Filter - Allows projects to be filtered by skills used*/
+const skillListItem = document.querySelectorAll('.project-skills li');
+
+function filterSkills(item) {
+    const skillsUsed= document.querySelectorAll('.skills-used');
+    skillsUsed.forEach(skill => {
+        const parent = skill.parentElement.parentElement.parentElement;
+        const skillUsedText = skill.innerText.replace('Skills Used:', '').toLowerCase();
+      
+    
+        if (skillUsedText.indexOf(item) >= 0) {
+            parent.classList.remove('hidden');
+        } else {
+            parent.classList.add('hidden');
+        }
+    });
+}
+
+skillListItem.forEach(skill => {
+    skill.addEventListener('click', () => {
+        const skillText = skill.innerText.toLowerCase();
+        filterSkills(skillText);
+    })
+});

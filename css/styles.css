@@ -47,6 +47,18 @@ hr {
     border: 2px solid #343a40;
 }
 
+.project-skills li {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid black;
+}
+
+.project-skills li:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
 /*List Item Styling*/
 .list-item-html5 {
     background-color: #e34f26;
@@ -56,6 +68,7 @@ hr {
 .list-item-html5-inverted {
     background-color: white;
     color: #e34f26;
+    cursor: pointer;
 }
 
 .list-item-css3 {
@@ -66,6 +79,7 @@ hr {
 .list-item-css3-inverted {
     color: #2759AE;
     background-color: white;
+    cursor: pointer;
 }
 
 .list-item-javascript {
@@ -76,6 +90,7 @@ hr {
 .list-item-javascript-inverted {
     color: #f7df1e;
     background-color: black;
+    cursor: pointer;
 }
 
 
@@ -86,6 +101,7 @@ hr {
 .list-item-sass-inverted {
     background-color: #CD6799;
     color: white;
+    cursor: pointer;
 }
 
 .list-item-sql {
@@ -96,6 +112,7 @@ hr {
 .list-item-sql-inverted {
     color: #CFD8DC;
     background-color: #B71C1C;
+    cursor: pointer;
 }
 
 .list-item-github {
@@ -106,6 +123,7 @@ hr {
 .list-item-github-inverted {
     color: #333;
     background-color: white;
+    cursor: pointer;
 }
 
 .list-item-git {
@@ -115,6 +133,7 @@ hr {
 .list-item-git-inverted {
     background-color: #F34F29;
     color: white;
+    cursor: pointer;
 }
 
 .list-item-bootstrap {
@@ -125,6 +144,7 @@ hr {
 .list-item-bootstrap-inverted {
     background-color: white;
     color: #563d7c;
+    cursor: pointer;
 }
 
 .skills .list-group-item {
@@ -156,4 +176,9 @@ a > svg {
 a > svg:hover {
     transform: scale(1.5);
     opacity: 0.75;
+}
+
+/*Class to hide project cards*/
+.hidden {
+    display: none;
 }
