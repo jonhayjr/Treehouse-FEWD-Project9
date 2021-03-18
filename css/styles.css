@@ -30,12 +30,6 @@ hr {
 }
 
 /*Project*/
-@media (min-width: 768px) {
-    .card img {
-        height: 325px;
-    }
-}
-
 .card .btn-secondary,
 .card .btn-dark {
     border: 2px solid transparent;
@@ -176,10 +170,6 @@ hr {
     fill: #333;
 }
 
-.contact a {
-    text-decoration: none;
-}
-
 a > svg {
     transition: all 0.3s ease-in-out;
 }
@@ -192,4 +182,11 @@ a > svg:hover {
 /*Class to hide project cards*/
 .hidden {
     display: none;
+}
+
+/*Media Queries*/
+@media (min-width: 768px) {
+    .card img {
+        height: 325px;
+    }
 }
