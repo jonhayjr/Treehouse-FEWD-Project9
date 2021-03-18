@@ -10,6 +10,7 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 20vh;
 }
 
 .img-radius {
@@ -167,6 +168,10 @@ hr {
 
 .github {
     fill: #333;
+}
+
+.contact a {
+    text-decoration: none;
 }
 
 a > svg {

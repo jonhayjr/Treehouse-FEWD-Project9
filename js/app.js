@@ -69,4 +69,3 @@ function filterSkills() {
 
 skillSelect.addEventListener('change', filterSkills);
 
- 
