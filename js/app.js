@@ -6,7 +6,7 @@ const backgroundImageOrange = 'linear-gradient(to bottom, rgba(246, 245, 252, 0.
 
 headerBackground.addEventListener('mouseover', () => {
     headerBackground.style.backgroundImage = backgroundImagePurple;
-    headerText.innerText = "And I'm a web developer from Santa Barbara, California."
+    headerText.innerText = "And I'm a web developer."
 });
 
 headerBackground.addEventListener('mouseout', () => {
