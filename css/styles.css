@@ -30,6 +30,13 @@ hr {
 }
 
 /*Project*/
+.custom-select {
+    background-color: white;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 300px;
+}
+
 .card .btn-secondary,
 .card .btn-dark {
     border: 2px solid transparent;
