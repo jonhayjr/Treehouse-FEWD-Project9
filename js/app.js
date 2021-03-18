@@ -1,17 +1,26 @@
 //Header Background Image/Text Effect
 const headerBackground = document.querySelector('.header-background');
-const headerText = document.getElementById('header-text');
-const backgroundImagePurple = 'linear-gradient(to bottom, rgba(246, 245, 252, 0.247), rgba(117, 19, 93, 0.73)), url("../img/sbimage.jpeg")';
-const backgroundImageOrange = 'linear-gradient(to bottom, rgba(246, 245, 252, 0.247), rgba(117, 19, 93, 0.055)), url("../img/sbimage.jpeg")';
+const headerText1 = document.getElementById('header-text-1');
+const headerText2 = document.getElementById('header-text-2');
 
 headerBackground.addEventListener('mouseover', () => {
-    headerBackground.style.backgroundImage = backgroundImagePurple;
-    headerText.innerText = "And I'm a web developer."
+    const windowWidth = window.innerWidth;
+    if (windowWidth >= 768) {
+        headerBackground.classList.remove('background-image-orange');
+        headerBackground.classList.add('background-image-purple');
+        headerText1.classList.add('hidden');
+        headerText2.classList.remove('hidden');
+    }
 });
 
 headerBackground.addEventListener('mouseout', () => {
-    headerBackground.style.backgroundImage = backgroundImageOrange;
-    headerText.innerText = "My name is Jon";
+    const windowWidth = window.innerWidth;
+    if (windowWidth >= 768) {
+        headerBackground.classList.remove('background-image-purple');
+        headerBackground.classList.add('background-image-orange');
+        headerText2.classList.add('hidden');
+        headerText1.classList.remove('hidden');
+    }
 })
 
 
