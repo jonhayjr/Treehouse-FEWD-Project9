@@ -49,10 +49,6 @@ img {
     transition: all 0.3s ease-in-out;
 }
 
-.card:hover {
-    transform: scale(1.1);
-    z-index: 99;
-}
 
 .card .btn-secondary,
 .card .btn-dark {
@@ -217,5 +213,9 @@ a > svg:hover {
 @media (min-width: 768px) {
     .card img {
         height: 325px;
+    }
+    .card:hover {
+        transform: scale(1.1);
+        z-index: 99;
     }
 }
