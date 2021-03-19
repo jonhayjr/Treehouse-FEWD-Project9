@@ -67,7 +67,7 @@ function filterSkills() {
         const skillUsedText = skill.innerText.replace('Skills Used:', '').toLowerCase();
       
     
-        if (skillUsedText.indexOf(selectValue) >= 0) {
+        if (skillUsedText.indexOf(selectValue) >= 0 || selectValue === 'all') {
             parent.classList.remove('hidden');
         } else {
             parent.classList.add('hidden');
